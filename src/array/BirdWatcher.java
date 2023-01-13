@@ -35,7 +35,7 @@ public class BirdWatcher {
     public int getCountForFirstDays(int numberOfDays) {
         int sum = 0;
         int min = Math.min(numberOfDays,this.birdsPerDay.length);
-        for(int i = 0; i< numberOfDays; i++) {
+        for(int i = 0; i< min; i++) {
             sum = sum +this.birdsPerDay[i];
         }
         return sum;
