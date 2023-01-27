@@ -2,7 +2,6 @@ package condination_if.black_jack;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Stream;
 
 public class BlackJackSolution1 {
