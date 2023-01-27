@@ -21,15 +21,15 @@ public class BlackJackSolution1 {
     public Map<String, Integer> addCardsToMap() {
         Map<String, Integer> card = new HashMap<>();
         card.put("ace", 11);
-        card.put("one", 11);
-        card.put("two", 11);
-        card.put("three", 11);
-        card.put("four", 11);
-        card.put("five", 11);
-        card.put("six", 11);
-        card.put("seven", 11);
-        card.put("eight", 11);
-        card.put("nine", 11);
+        card.put("one", 1);
+        card.put("two", 2);
+        card.put("three", 3);
+        card.put("four", 4);
+        card.put("five", 5);
+        card.put("six", 6);
+        card.put("seven", 7);
+        card.put("eight", 8);
+        card.put("nine", 9);
         card.put("ten", 10);
         card.put("king", 10);
         card.put("queen", 10);
