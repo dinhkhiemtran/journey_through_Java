@@ -1,4 +1,4 @@
-package condination_if.black_jack;
+package condinations_if;
 
 import java.util.HashMap;
 import java.util.Map;
