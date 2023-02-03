@@ -9,7 +9,7 @@ public class CharacterCount {
     private String str;
 
     public CharacterCount(String str) {
-        this.str = str;
+        this.str = str.replace(" ", "");
     }
 
     public HashMap<Character, Integer> putElements() {
@@ -36,7 +36,7 @@ public class CharacterCount {
     }
 
     public static void main(String[] args) {
-        String str = "abbcccdddeeeee";
+        String str = "Welcome to the black parade.";
         CharacterCount count = new CharacterCount(str);
         System.out.println(count.countingCharacter());
     }
