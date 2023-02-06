@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 
 import static java.lang.String.format;
 
