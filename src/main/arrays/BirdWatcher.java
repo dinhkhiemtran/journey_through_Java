@@ -1,4 +1,4 @@
-package main.for_loop;
+package main.arrays;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class BirdWatcher {
         return birdsPerDay.length == 0 ? 0 : birdsPerDay[birdsPerDay.length - 1];
     }
 
-    public void incrementTodayCount() {
+    public void incrementTodaysCount() {
         int index = birdsPerDay.length - 1;
         int lastElementBeingTodayCount = birdsPerDay[index];
         int incrementTodayCount = lastElementBeingTodayCount + 1;
@@ -58,7 +58,7 @@ public class BirdWatcher {
         System.out.println(Arrays.toString(lastWeek));
         int today = birdWatcher.getToday();
         System.out.println(today);
-        birdWatcher.incrementTodayCount();
+        birdWatcher.incrementTodaysCount();
         System.out.println(birdWatcher.hasDayWithoutBirds());
         int countingFirstDays = birdWatcher.getCountForFirstDays(4);
         System.out.println(countingFirstDays);

@@ -1,4 +1,4 @@
-package main.constructors;
+package main.arrays;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package main.for_loop;
+package main.arrays;
 
 import java.util.Arrays;
 

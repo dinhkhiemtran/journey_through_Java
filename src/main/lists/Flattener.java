@@ -7,7 +7,7 @@ import static java.util.Arrays.asList;
 
 public class Flattener {
 
-    List flatten(List list) {
+    public List flatten(List list) {
         List<Object> result = new ArrayList<>();
 
         for (Object o : list) {

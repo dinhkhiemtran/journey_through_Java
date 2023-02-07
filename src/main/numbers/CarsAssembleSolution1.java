@@ -20,18 +20,19 @@ public class CarsAssembleSolution1 {
     );
 
 
-    public static double getProductionRatePerHour(int speed) {
+    public double productionRatePerHour(int speed) {
         return speed * PRODUCED_EACH_HOUR * SUCCESS_RATE.get(speed);
     }
 
-    public static int getWorkingItemsPerMinute(int speed) {
-        return (int) (getProductionRatePerHour(speed) / 60);
+    public int workingItemsPerMinute(int speed) {
+        return (int) (productionRatePerHour(speed) / 60);
     }
 
     public static void main(String[] args) {
-        double productionRatePerHour = getProductionRatePerHour(6);
+        CarsAssembleSolution1 carsAssembleSolution1 = new CarsAssembleSolution1();
+        double productionRatePerHour = carsAssembleSolution1.productionRatePerHour(6);
         System.out.println(productionRatePerHour);
-        int workingWorkingItemsPerMinute = getWorkingItemsPerMinute(6);
+        int workingWorkingItemsPerMinute = carsAssembleSolution1.workingItemsPerMinute(5);
         System.out.println(workingWorkingItemsPerMinute);
     }
 }

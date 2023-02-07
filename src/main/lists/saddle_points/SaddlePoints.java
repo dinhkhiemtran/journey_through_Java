@@ -33,7 +33,7 @@ public class SaddlePoints {
                 .toArray();
     }
 
-    public Set<MatrixCoordinate> getSaddlePoint() {
+    public Set<MatrixCoordinate> getSaddlePoints() {
         return IntStream.range(0, rows).boxed()
                 .flatMap(row -> IntStream.range(0, cols)
                         .filter(col -> rowsMax[row] == colsMin[col])
@@ -44,7 +44,7 @@ public class SaddlePoints {
     public static void main(String[] args) {
         List<List<Integer>> values = List.of(List.of(9,8,7), List.of(5,3,2), List.of(6,6,7));
         SaddlePoints saddlePoints = new SaddlePoints(values);
-        Set<MatrixCoordinate> matrix = saddlePoints.getSaddlePoint();
+        Set<MatrixCoordinate> matrix = saddlePoints.getSaddlePoints();
         System.out.println(matrix);
     }
 }
