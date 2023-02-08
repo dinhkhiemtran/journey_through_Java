@@ -1,6 +1,6 @@
 package test.chars;
 
-import main.chars.Scrabble;
+import main.map.Scrabble;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
