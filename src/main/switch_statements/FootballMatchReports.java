@@ -12,7 +12,7 @@ public class FootballMatchReports {
         return shirtNumb;
     }
 
-    public String onField(int shirtNum) {
+    public static String onField(int shirtNum) {
         switch (shirtNum) {
             case 1:
                 return "goalie";

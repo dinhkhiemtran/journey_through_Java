@@ -1,6 +1,6 @@
-package main.inheritance.fighter;
+package main.inheritance;
 
-abstract class Fighter {
+public abstract class Fighter {
 
     public boolean isVulnerable() {return false;}
 

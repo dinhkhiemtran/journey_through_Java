@@ -8,7 +8,7 @@ public class Triangle {
 
     private double side3;
 
-    Triangle(double side1, double side2, double side3) throws TriangleException {
+    public Triangle(double side1, double side2, double side3) throws TriangleException {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -16,15 +16,15 @@ public class Triangle {
         if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1) throw new TriangleException();
     }
 
-    boolean isEquilateral() {
+    public boolean isEquilateral() {
         return this.side1 == this.side2 && this.side1 == side3;
     }
 
-    boolean isIsosceles() {
+    public boolean isIsosceles() {
         return this.side1 == this.side2 || this.side2 == this.side3 || this.side3 == this.side1;
     }
 
-    boolean isScalene() {
+    public boolean isScalene() {
         return !isIsosceles() && !isIsosceles() &&
                 !(isIsosceles()) && !(isEquilateral());
     }

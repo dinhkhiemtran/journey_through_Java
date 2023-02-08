@@ -1,9 +1,9 @@
 package main.constructors;
 
-class NeedForSpeed {
+public class NeedForSpeed {
     private int speed, batteryDrain, distance, battery = 100;
 
-    NeedForSpeed(int speed, int batteryDrain) {
+    public NeedForSpeed(int speed, int batteryDrain) {
         this.speed = speed;
         this.batteryDrain = batteryDrain;
     }
@@ -28,17 +28,3 @@ class NeedForSpeed {
     }
 }
 
-class RaceTrack {
-    private int distance;
-
-    RaceTrack(int distance) {
-        this.distance = distance;
-    }
-
-    public boolean tryFinishTrack(NeedForSpeed car) {
-        while (!car.batteryDrained()) {
-            car.drive();
-        }
-        return (car.distanceDriven() >= distance) ? true : false;
-    }
-}

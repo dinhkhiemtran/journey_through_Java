@@ -1,4 +1,4 @@
-package main.interfaces.exp_and_prod_cars;
+package main.interfaces;
 
 public class ProductionRemoteControlCar implements Comparable<ProductionRemoteControlCar>, RemoteControlCar {
 

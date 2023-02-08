@@ -1,4 +1,4 @@
-package main.inheritance.fighter;
+package main.inheritance;
 
 public class Wizard extends Fighter {
     boolean spellPrepared = false;
@@ -14,11 +14,11 @@ public class Wizard extends Fighter {
     }
 
     @Override
-    int damagePoints(Fighter warrior) {
+    public int damagePoints(Fighter warrior) {
         return spellPrepared ? 12 : 3;
     }
 
-    void prepareSpell() {
+    public void prepareSpell() {
         spellPrepared = true;
     }
 }

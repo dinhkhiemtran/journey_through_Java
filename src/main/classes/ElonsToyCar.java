@@ -1,16 +1,16 @@
 package main.classes;
 
-public class ElonToyCar {
+public class ElonsToyCar {
     private int distance;
     private int battery;
 
-    public ElonToyCar() {
+    public ElonsToyCar() {
         this.battery = 100;
         this.distance = 0;
     }
 
-    public static ElonToyCar buy() {
-        return new ElonToyCar();
+    public static ElonsToyCar buy() {
+        return new ElonsToyCar();
     }
 
     public String distanceDisplay() {
@@ -19,7 +19,7 @@ public class ElonToyCar {
 
     public String batteryDisplay() {
         if (this.battery == 0) return "Battery empty";
-        return String.format("Battery at %s", this.battery);
+        return String.format("Battery at %s%%", this.battery);
     }
 
     public void drive() {
