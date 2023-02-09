@@ -1,6 +1,6 @@
 package test.maps;
 
-import main.map.ResistorColor;
+import main.maps.ResistorColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

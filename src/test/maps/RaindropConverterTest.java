@@ -1,6 +1,6 @@
 package test.maps;
 
-import main.map.RaindropConverter;
+import main.maps.RaindropConverter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
