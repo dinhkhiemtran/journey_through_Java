@@ -3,7 +3,7 @@ package main.generics;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DoublyLinkedList<Object>  {
+public class DoublyLinkedList<Object> {
 
     private List<Object> list = new LinkedList<>();
 

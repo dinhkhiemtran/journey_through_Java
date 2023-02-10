@@ -5,7 +5,7 @@ public class CarsAssembleSolution2 {
     private final static int PRODUCED_EACH_HOUR = 21;
 
     public static double productionRatePerHour(int speed) {
-        if (speed >= 5 && speed <= 8){
+        if (speed >= 5 && speed <= 8) {
             return speed * PRODUCED_EACH_HOUR * 0.9;
         } else if (speed == 9) {
             return speed * PRODUCED_EACH_HOUR * 0.8;

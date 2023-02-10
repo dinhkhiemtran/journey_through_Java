@@ -3,7 +3,7 @@ package main.strings;
 public class IsogramChecker {
 
     public boolean isIsogram(String phrase) {
-        phrase = phrase.replace(" ","").replace("-", "");
+        phrase = phrase.replace(" ", "").replace("-", "");
         return phrase.replace("-", "").toLowerCase().chars()
                 .distinct()
                 .count() == phrase.length();

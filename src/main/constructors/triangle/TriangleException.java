@@ -1,4 +1,4 @@
 package main.constructors.triangle;
 
-public class TriangleException extends Exception{
+public class TriangleException extends Exception {
 }

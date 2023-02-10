@@ -1,6 +1,6 @@
 package main.inheritance;
 
-public class Warrior extends Fighter{
+public class Warrior extends Fighter {
 
     @Override
     public String toString() {
@@ -9,6 +9,6 @@ public class Warrior extends Fighter{
 
     @Override
     public int damagePoints(Fighter wizard) {
-        return wizard.isVulnerable()? 10: 6;
+        return wizard.isVulnerable() ? 10 : 6;
     }
 }

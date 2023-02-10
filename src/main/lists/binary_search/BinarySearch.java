@@ -10,7 +10,7 @@ public class BinarySearch {
         this.list = list;
     }
 
-    public int indexOf(int target)  throws ValueNotFoundException {
+    public int indexOf(int target) throws ValueNotFoundException {
         int leftPointer = 0;
         int rightPointer = list.size() - 1;
         while (leftPointer <= rightPointer) {

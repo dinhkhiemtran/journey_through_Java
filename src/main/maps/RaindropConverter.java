@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class RaindropConverter {
 
     private final static HashMap<Integer, String> map = new HashMap<>();
+
     static {
         map.put(3, "Pling");
         map.put(5, "Plang");

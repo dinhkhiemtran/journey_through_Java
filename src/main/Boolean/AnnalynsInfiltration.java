@@ -18,25 +18,25 @@ public class AnnalynsInfiltration {
         return (!knightIsAwake && !archerIsAwake && prisonerIsAwake) || (!archerIsAwake && petDogIsPresent);
     }
 
-    public static void testCase1(){
+    public static void testCase1() {
         boolean knightIsAwake = false;
         System.out.println(canFastAttack(knightIsAwake));
     }
 
-    public static void testCase2(){
+    public static void testCase2() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = true;
         boolean prisonerIsAwake = false;
         System.out.println(canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    public static void testCase3(){
+    public static void testCase3() {
         boolean archerIsAwake = false;
         boolean prisonerIsAwake = true;
         System.out.println(canSignalPrisoner(archerIsAwake, prisonerIsAwake));
     }
 
-    public static void testCase4(){
+    public static void testCase4() {
         boolean knightIsAwake = false;
         boolean archerIsAwake = true;
         boolean prisonerIsAwake = false;

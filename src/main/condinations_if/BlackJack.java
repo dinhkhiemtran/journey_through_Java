@@ -13,9 +13,9 @@ public class BlackJack {
     private final String WIN = "W";
 
     public static int parseCard(String card) {
-        switch(card) {
+        switch (card) {
             case "ace":
-               return 11;
+                return 11;
             case "two":
                 return 2;
             case "three":
@@ -32,7 +32,7 @@ public class BlackJack {
                 return 8;
             case "nine":
                 return 9;
-            case "ten" :
+            case "ten":
             case "jack":
             case "queen":
             case "king":
@@ -43,7 +43,7 @@ public class BlackJack {
     }
 
     public static boolean isBlackjack(String card1, String card2) {
-        return  parseCard(card1) + parseCard(card2) == BLACK_JACK;
+        return parseCard(card1) + parseCard(card2) == BLACK_JACK;
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
@@ -56,7 +56,7 @@ public class BlackJack {
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        if (handScore >= 17){
+        if (handScore >= 17) {
             return STAND;
         } else if (handScore <= 11) {
             return HIT;
@@ -79,7 +79,7 @@ public class BlackJack {
 
     public static void main(String[] args) {
         BlackJack blackJack = new BlackJack();
-        String results = blackJack.firstTurn("one","one","three");
+        String results = blackJack.firstTurn("one", "one", "three");
         System.out.println(results);
     }
 }

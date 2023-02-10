@@ -27,8 +27,8 @@ public class CharacterCount {
     public char countingCharacter() {
         HashMap<Character, Integer> mapping = putElements();
         char max = str.charAt(0);
-        for (Character key : mapping.keySet()){
-            if (mapping.get(key) > mapping.get(max)){
+        for (Character key : mapping.keySet()) {
+            if (mapping.get(key) > mapping.get(max)) {
                 max = key;
             }
         }

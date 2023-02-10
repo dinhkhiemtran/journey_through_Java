@@ -27,11 +27,11 @@ public class Anagram {
     }
 
     private boolean isAnagramOf(String word) {
-        if(this.word.length() != word.length()) {
+        if (this.word.length() != word.length()) {
             return false;
         }
         String lowered = word.toLowerCase();
-        if(this.word.equals(lowered)) {
+        if (this.word.equals(lowered)) {
             return false;
         }
         char[] sorted = lowered.toCharArray();

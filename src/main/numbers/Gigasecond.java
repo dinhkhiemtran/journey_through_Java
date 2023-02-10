@@ -10,7 +10,7 @@ public class Gigasecond {
 
     private LocalDateTime now;
 
-    public Gigasecond(LocalDate moment){
+    public Gigasecond(LocalDate moment) {
         this.now = moment.atStartOfDay();
     }
 

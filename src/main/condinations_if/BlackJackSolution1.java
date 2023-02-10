@@ -12,6 +12,7 @@ public class BlackJackSolution1 {
         SPLIT("P"),
         AUTOMATICALLY_WIN("W");
         private final String code;
+
         Option(String code) {
             this.code = code;
         }
@@ -37,9 +38,9 @@ public class BlackJackSolution1 {
     }
 
 
-    public int parseCard(String card){
+    public int parseCard(String card) {
         Map<String, Integer> CARD = addCardsToMap();
-        if (CARD.containsKey(card)){
+        if (CARD.containsKey(card)) {
             return CARD.get(card);
         } else {
             throw new IllegalArgumentException(String.format("Unknown card '%s'", card));
@@ -52,22 +53,22 @@ public class BlackJackSolution1 {
                 .sum() == 21;
     }
 
-    public String largeHand(boolean isBlackjack, int dealerScore){
-        if (!isBlackjack){
+    public String largeHand(boolean isBlackjack, int dealerScore) {
+        if (!isBlackjack) {
             return Option.SPLIT.code;
         }
 
-        if (dealerScore < 10){
+        if (dealerScore < 10) {
             return Option.AUTOMATICALLY_WIN.code;
         }
         return Option.STAND.code;
     }
 
-    public String smallHand(int handScore, int dealerScore){
-        if (handScore >= 17){
+    public String smallHand(int handScore, int dealerScore) {
+        if (handScore >= 17) {
             return Option.STAND.code;
         }
-        if (handScore <= 11){
+        if (handScore <= 11) {
             return Option.HIT.code;
         }
         return dealerScore >= 7 ? Option.HIT.code : Option.STAND.code;

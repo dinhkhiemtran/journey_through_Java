@@ -6,7 +6,7 @@ public class FootballMatchReports {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public int getShirtNum(){
+    public int getShirtNum() {
         System.out.print("Shirt Number: ");
         int shirtNumb = scanner.nextInt();
         return shirtNumb;
@@ -38,7 +38,7 @@ public class FootballMatchReports {
         }
     }
 
-    private void display(){
+    private void display() {
         int shirtNumb = getShirtNum();
         System.out.println("Position on field: " + onField(shirtNumb));
     }

@@ -21,13 +21,13 @@ public class HandshakeCalculator {
         HashMap<Integer, Signal> mapping = getHandShake();
         List<Signal> handShake = new ArrayList<>();
         mapping.forEach((key, value) -> {
-            if ((number & key) == key){
+            if ((number & key) == key) {
                 handShake.add(value);
             }
         });
-            if ((number & 16) == 16){
-                Collections.reverse(handShake);
-            }
+        if ((number & 16) == 16) {
+            Collections.reverse(handShake);
+        }
         return handShake;
     }
 

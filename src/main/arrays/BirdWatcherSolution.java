@@ -6,32 +6,32 @@ public class BirdWatcherSolution {
 
     private int[] birdsPerDay;
 
-    public BirdWatcherSolution(int[] birdsPerDay){
+    public BirdWatcherSolution(int[] birdsPerDay) {
         this.birdsPerDay = birdsPerDay;
     }
 
-    public int[] getLastWeek(){
+    public int[] getLastWeek() {
         return birdsPerDay;
     }
 
-    public int getToday(){
-        return birdsPerDay.length == 0 ? 0 : birdsPerDay[birdsPerDay.length -1];
+    public int getToday() {
+        return birdsPerDay.length == 0 ? 0 : birdsPerDay[birdsPerDay.length - 1];
     }
 
-    public int incrementTodayCount(){
+    public int incrementTodayCount() {
         return ++birdsPerDay[birdsPerDay.length - 1];
     }
 
-    public boolean hasDayWithoutBirds(){
+    public boolean hasDayWithoutBirds() {
         return Arrays.stream(birdsPerDay).filter(elements -> elements == 0).findAny().isPresent();
     }
 
-    public int getCountForFirstDays(int numberOfDays){
+    public int getCountForFirstDays(int numberOfDays) {
         return Arrays.stream(birdsPerDay).limit(numberOfDays).sum();
     }
 
-    public int getBusyDays(){
-        return (int)Arrays.stream(birdsPerDay).filter(elements -> elements >= 5).count();
+    public int getBusyDays() {
+        return (int) Arrays.stream(birdsPerDay).filter(elements -> elements >= 5).count();
     }
 
     public static void main(String[] args) {

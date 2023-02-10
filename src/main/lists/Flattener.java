@@ -13,7 +13,7 @@ public class Flattener {
         for (Object o : list) {
             if (o instanceof List) {
                 result.addAll(flatten((List) o));
-            } else if (o != null){
+            } else if (o != null) {
                 result.add(o);
             }
         }

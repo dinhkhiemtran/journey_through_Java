@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class Robot {
 
-    private static final Set<String> registeredNames  = new HashSet<>();
+    private static final Set<String> registeredNames = new HashSet<>();
 
     private static Random random = new Random();
 
@@ -33,13 +33,13 @@ public class Robot {
     }
 
     public String randomString(char fromChar, char toChar, int len) {
-        return random.ints(fromChar, toChar + 1 ).limit(len)
+        return random.ints(fromChar, toChar + 1).limit(len)
                 .mapToObj(ch -> Character.toString(ch))
                 .collect(Collectors.joining());
     }
 
     public String generateName() {
-        return randomString('A', 'Z',2) + randomString('0', '9', 3);
+        return randomString('A', 'Z', 2) + randomString('0', '9', 3);
     }
 
     public static void main(String[] args) {

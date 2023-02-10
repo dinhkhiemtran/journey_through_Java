@@ -11,7 +11,7 @@ public class RotationalCipher {
     }
 
     public int rot(int ch) {
-        if (!Character.isLetter(ch)){
+        if (!Character.isLetter(ch)) {
             return ch;
         }
         char first = Character.isUpperCase(ch) ? 'A' : 'a';

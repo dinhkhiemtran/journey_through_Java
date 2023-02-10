@@ -41,19 +41,19 @@ public class SalaryCalculator {
         return Math.min(salary, MAX_TOTAL_SALARY);
     }
 
-    public int getDaySkipped(){
+    public int getDaySkipped() {
         System.out.print("Day skipped: ");
         int numberOfDaysSkipped = scanner.nextInt();
         return numberOfDaysSkipped;
     }
 
-    public int getProductSold(){
+    public int getProductSold() {
         System.out.print("Products Sold: ");
         int productsSold = scanner.nextInt();
         return productsSold;
     }
 
-    public void getSalary(){
+    public void getSalary() {
         int daysSkipped = getDaySkipped();
         int productsSold = getProductSold();
         System.out.println("Salary: " + finalSalary(daysSkipped, productsSold));

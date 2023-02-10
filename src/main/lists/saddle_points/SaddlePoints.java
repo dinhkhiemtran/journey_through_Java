@@ -42,7 +42,7 @@ public class SaddlePoints {
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> values = List.of(List.of(9,8,7), List.of(5,3,2), List.of(6,6,7));
+        List<List<Integer>> values = List.of(List.of(9, 8, 7), List.of(5, 3, 2), List.of(6, 6, 7));
         SaddlePoints saddlePoints = new SaddlePoints(values);
         Set<MatrixCoordinate> matrix = saddlePoints.getSaddlePoints();
         System.out.println(matrix);

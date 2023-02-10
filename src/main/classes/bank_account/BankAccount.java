@@ -42,10 +42,12 @@ public class BankAccount {
     }
 
     private void checkIfAccountIsNotEmpty() throws BankAccountActionInvalidException {
-        if (this.balance == 0) throw new BankAccountActionInvalidException("Cannot withdraw money from an empty account");
+        if (this.balance == 0)
+            throw new BankAccountActionInvalidException("Cannot withdraw money from an empty account");
     }
 
-    private void checkIfBalanceIsGreaterThenAmountToWithdraw(int amount) throws BankAccountActionInvalidException{
-        if((this.balance - amount) < 0) throw new BankAccountActionInvalidException("Cannot withdraw more money than is currently in the account");
+    private void checkIfBalanceIsGreaterThenAmountToWithdraw(int amount) throws BankAccountActionInvalidException {
+        if ((this.balance - amount) < 0)
+            throw new BankAccountActionInvalidException("Cannot withdraw more money than is currently in the account");
     }
 }

@@ -7,7 +7,7 @@ public class LanguageList {
 
     private final List<String> languages = new ArrayList<>();
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return languages.isEmpty();
     }
 
@@ -34,5 +34,5 @@ public class LanguageList {
     public boolean isExciting() {
         return containsLanguage("Java") || containsLanguage("Kotlin");
     }
-    
+
 }
