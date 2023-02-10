@@ -2,7 +2,6 @@ package test.lists;
 
 import main.lists.saddle_points.MatrixCoordinate;
 import main.lists.saddle_points.SaddlePoints;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
