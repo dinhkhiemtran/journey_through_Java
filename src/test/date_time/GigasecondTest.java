@@ -1,6 +1,6 @@
-package test.numbers;
+package test.date_time;
 
-import main.numbers.Gigasecond;
+import main.date_time.Gigasecond;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

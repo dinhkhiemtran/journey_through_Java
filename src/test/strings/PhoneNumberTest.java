@@ -1,4 +1,4 @@
-package test;
+package test.strings;
 
 import main.strings.PhoneNumber;
 import org.junit.jupiter.api.Test;

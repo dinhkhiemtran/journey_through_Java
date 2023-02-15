@@ -1,4 +1,4 @@
-package test;
+package test.for_loop;
 
 import main.for_loop.Series;
 import org.junit.jupiter.api.Test;

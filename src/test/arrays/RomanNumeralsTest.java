@@ -1,4 +1,4 @@
-package test;
+package test.arrays;
 
 import main.arrays.RomanNumerals;
 import org.junit.jupiter.api.Test;
