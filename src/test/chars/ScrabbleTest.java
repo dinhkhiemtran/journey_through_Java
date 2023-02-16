@@ -67,7 +67,6 @@ class ScrabbleTest {
         assertEquals(0, scrabble.getScore());
     }
 
-
     @Test
     public void testEntireAlphabetAvailable() {
         Scrabble scrabble = new Scrabble("abcdefghijklmnopqrstuvwxyz");

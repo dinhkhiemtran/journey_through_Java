@@ -69,5 +69,4 @@ class SalaryCalculatorTest {
     public void skippedBelowThresholdAndSoldBelowThreshold() {
         assertThat(calculator.finalSalary(2, 5)).isEqualTo(1050.0);
     }
-
 }

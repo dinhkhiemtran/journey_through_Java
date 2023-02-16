@@ -16,7 +16,6 @@ public class BeerSong {
         return song;
     }
 
-
     public String verse(Integer bottleCount) {
         Integer bottleMinusOne = bottleCount - 1;
         switch (bottleCount) {

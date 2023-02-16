@@ -14,7 +14,6 @@ class BankAccountTest {
 
     private BankAccount bankAccount = new BankAccount();
 
-
     @Test
     public void newlyOpenedAccountHasEmptyBalance() throws BankAccountActionInvalidException {
         bankAccount.open();
@@ -133,7 +132,6 @@ class BankAccountTest {
         }
     }
 
-
     private void adjustBalanceConcurrently() throws BankAccountActionInvalidException, InterruptedException {
         Random random = new Random();
         Thread[] threads = new Thread[1000];
@@ -144,7 +142,6 @@ class BankAccountTest {
                     Thread.sleep(random.nextInt(10));
                     bankAccount.withdraw(5);
                 } catch (BankAccountActionInvalidException e) {
-
                     fail("Exception should not be thrown: " + e.getMessage());
                 } catch (InterruptedException ignored) {
                 }

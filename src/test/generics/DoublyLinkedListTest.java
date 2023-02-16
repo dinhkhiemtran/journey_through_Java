@@ -10,25 +10,24 @@ class DoublyLinkedListTest {
     @Test
     public void testPushPop() {
         DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-        ((DoublyLinkedList<Integer>) list).push(10);
-        ((DoublyLinkedList<Integer>) list).push(20);
-        ((DoublyLinkedList<Integer>) list).push(30);
-        assertThat(((DoublyLinkedList<Integer>) list).pop()).isEqualTo(30);
-        assertThat(((DoublyLinkedList<Integer>) list).pop()).isEqualTo(20);
+        list.push(10);
+        list.push(20);
+        list.push(30);
+        assertThat(list.pop()).isEqualTo(30);
+        assertThat(list.pop()).isEqualTo(20);
         assertThat(list.pop()).isEqualTo(10);
     }
 
     @Test
     public void testPushShift() {
         DoublyLinkedList<String> list = new DoublyLinkedList<>();
-        ((DoublyLinkedList<String>) list).push("10");
+        list.push("10");
         list.push("20");
         list.push("30");
         assertThat(((DoublyLinkedList<String>) list).shift()).isEqualTo("10");
         assertThat(list.shift()).isEqualTo("20");
         assertThat(list.shift()).isEqualTo("30");
     }
-
 
     @Test
     public void testUnshiftShift() {

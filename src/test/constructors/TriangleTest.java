@@ -116,5 +116,4 @@ class TriangleTest {
         Triangle triangle = new Triangle(0.5, 0.4, 0.6);
         assertTrue(triangle.isScalene());
     }
-
 }

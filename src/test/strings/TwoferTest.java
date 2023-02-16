@@ -9,7 +9,6 @@ class TwoferTest {
 
     private Twofer twofer;
 
-
     @Test
     public void noNameGiven() {
         twofer = new Twofer();
@@ -23,11 +22,11 @@ class TwoferTest {
         assertThat(twofer.twofer("Alice"))
                 .isEqualTo("One for Alice, one for me.");
     }
+
     @Test
     public void anotherNameGiven() {
         twofer = new Twofer();
         assertThat(twofer.twofer("Bob"))
                 .isEqualTo("One for Bob, one for me.");
     }
-
 }

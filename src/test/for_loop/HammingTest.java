@@ -40,7 +40,6 @@ class HammingTest {
                 .withMessage("leftStrand and rightStrand must be of equal length.");
     }
 
-
     @Test
     public void testValidatesSecondStrandNotLonger() {
         assertThatExceptionOfType(IllegalArgumentException.class)

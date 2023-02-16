@@ -336,5 +336,4 @@ class BlackJackTest {
         BlackJack blackjack = new BlackJack();
         assertThat(blackjack.parseCard("king")).isEqualTo(10);
     }
-
 }

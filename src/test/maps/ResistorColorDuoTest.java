@@ -10,7 +10,6 @@ class ResistorColorDuoTest {
 
     private ResistorColorDuo resistorColorDuo;
 
-
     @BeforeEach
     public void setup() {
         resistorColorDuo = new ResistorColorDuo();
@@ -30,14 +29,12 @@ class ResistorColorDuoTest {
         ).isEqualTo(68);
     }
 
-
     @Test
     public void testYellowAndViolet() {
         assertThat(resistorColorDuo.value(
                 new String[]{"yellow", "violet"})
         ).isEqualTo(47);
     }
-
 
     @Test
     public void testOrangeAndOrange() {
@@ -46,11 +43,9 @@ class ResistorColorDuoTest {
         ).isEqualTo(33);
     }
 
-
     @Test
     public void testIgnoreAdditionalColors() {
         assertThat(resistorColorDuo.value(new String[]{"green", "brown", "orange"})
         ).isEqualTo(51);
     }
-
 }

@@ -108,8 +108,6 @@ class WordCountTest {
     }
 
     @Test
-
-
     public void normalizeCase() {
         expectedWordCount.put("go", 3);
         expectedWordCount.put("stop", 2);
@@ -147,7 +145,6 @@ class WordCountTest {
                 expectedWordCount, actualWordCount
         );
     }
-
 
     @Test
     public void withQuotations() {

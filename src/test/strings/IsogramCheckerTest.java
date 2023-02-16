@@ -79,5 +79,4 @@ class IsogramCheckerTest {
     public void testDuplicatedCharacterInTheMiddleIsNotIsogram() {
         assertThat(isogramChecker.isIsogram("accentor")).isFalse();
     }
-
 }

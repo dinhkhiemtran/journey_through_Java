@@ -10,7 +10,6 @@ class DnDCharacterTest {
 
     private DnDCharacter dndCharacter = new DnDCharacter();
 
-
     @Test
     public void testAbilityModifierForScore3IsNegative4() {
         assertEquals(-4, dndCharacter.modifier(3));
@@ -51,7 +50,6 @@ class DnDCharacterTest {
         assertEquals(0, dndCharacter.modifier(10));
     }
 
-
     @Test
     public void testAbilityModifierForScore11Is0() {
         assertEquals(0, dndCharacter.modifier(11));
@@ -87,19 +85,16 @@ class DnDCharacterTest {
         assertEquals(3, dndCharacter.modifier(17));
     }
 
-
     @Test
     public void testAbilityModifierForScore18Is4() {
         assertEquals(4, dndCharacter.modifier(18));
     }
-
 
     @Test
     public void testRandomAbilityIsWithinRange() {
         int score = dndCharacter.ability();
         assertTrue(score > 2 && score < 19);
     }
-
 
     @Test
     public void testRandomCharacterIsValid() {

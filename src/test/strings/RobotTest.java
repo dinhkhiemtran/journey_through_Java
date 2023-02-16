@@ -10,7 +10,6 @@ import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 class RobotTest {
 
     private static final String EXPECTED_ROBOT_NAME_PATTERN = "[A-Z]{2}\\d{3}";
@@ -53,8 +52,8 @@ class RobotTest {
         }
         assertThat(robotNames).hasSize(sampleSize);
     }
+
     private static void assertIsValidName(String name) {
         assertThat(name).matches(EXPECTED_ROBOT_NAME_PATTERN);
     }
-
 }

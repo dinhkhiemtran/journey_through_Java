@@ -12,7 +12,6 @@ class SaddlePointsTest {
 
     SaddlePoints matrix;
 
-
     @Test
     public void testCanIdentifyMultipleSaddlePointsInAColumn() {
         SaddlePoints matrix = new SaddlePoints(Arrays.asList(Arrays.asList(4, 5, 4), Arrays.asList(3, 5, 5), Arrays.asList(1, 5, 4)));
@@ -29,14 +28,14 @@ class SaddlePointsTest {
 
     @Test
     public void testCanIdentifySaddlePointInBottomRightCorner() {
-         matrix = new SaddlePoints(Arrays.asList(Arrays.asList(8, 7, 9), Arrays.asList(6, 7, 6), Arrays.asList(3, 2, 5)));
+        matrix = new SaddlePoints(Arrays.asList(Arrays.asList(8, 7, 9), Arrays.asList(6, 7, 6), Arrays.asList(3, 2, 5)));
         Set<MatrixCoordinate> expectedSaddlePoints = Collections.singleton(new MatrixCoordinate(3, 3));
         assertEquals(expectedSaddlePoints, matrix.getSaddlePoints());
     }
 
     @Test
     public void testCanIdentifyMultipleSaddlePointsInARow() {
-         matrix = new SaddlePoints(Arrays.asList(Arrays.asList(6, 7, 8), Arrays.asList(5, 5, 5), Arrays.asList(7, 5, 6)));
+        matrix = new SaddlePoints(Arrays.asList(Arrays.asList(6, 7, 8), Arrays.asList(5, 5, 5), Arrays.asList(7, 5, 6)));
         Set<MatrixCoordinate> expectedSaddlePoints = new HashSet<>(Arrays.asList(new MatrixCoordinate(2, 1), new MatrixCoordinate(2, 2), new MatrixCoordinate(2, 3)));
         assertEquals(expectedSaddlePoints, matrix.getSaddlePoints());
     }

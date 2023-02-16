@@ -10,7 +10,6 @@ class PigLatinTranslatorTest {
 
     private PigLatinTranslator pigLatinTranslator;
 
-
     @BeforeEach
     public void setup() {
         pigLatinTranslator = new PigLatinTranslator();

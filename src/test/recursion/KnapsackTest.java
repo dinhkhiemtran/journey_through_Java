@@ -13,12 +13,10 @@ class KnapsackTest {
 
     private Knapsack knapsack;
 
-
     @BeforeEach
     public void setup() {
         knapsack = new Knapsack();
     }
-
 
     @Test
     public void testNoItems() {
@@ -34,7 +32,6 @@ class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(0);
     }
 
-
     @Test
     public void testFiveItemsCannotBeGreedyByWeight() {
         List<Item> items = List.of(
@@ -46,7 +43,6 @@ class KnapsackTest {
         );
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(21);
     }
-
 
     @Test
     public void testFiveItemsCannotBeGreedyByValue() {
@@ -60,7 +56,6 @@ class KnapsackTest {
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(80);
     }
 
-
     @Test
     public void testExampleKnapsack() {
         List<Item> items = List.of(
@@ -71,7 +66,6 @@ class KnapsackTest {
         );
         assertThat(knapsack.maximumValue(10, items)).isEqualTo(90);
     }
-
 
     @Test
     public void testEightItems() {
@@ -87,7 +81,6 @@ class KnapsackTest {
         );
         assertThat(knapsack.maximumValue(104, items)).isEqualTo(900);
     }
-
 
     @Test
     public void testFifteenItems() {
@@ -110,5 +103,4 @@ class KnapsackTest {
         );
         assertThat(knapsack.maximumValue(750, items)).isEqualTo(1458);
     }
-
 }

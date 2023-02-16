@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 class LogLevelsTest {
 
     @Test
@@ -62,5 +61,4 @@ class LogLevelsTest {
     public void warning_message() {
         assertThat(LogLevels.messageSolution1("[WARNING]: Disk almost full")).isEqualTo("Disk almost full");
     }
-
 }

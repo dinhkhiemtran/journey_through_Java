@@ -53,13 +53,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UCU"));
     }
 
-
     @Test
     public void testSerineRnaSequence2() {
         List<String> expected = Arrays.asList("Serine");
         assertEquals(expected, proteinTranslator.translate("UCC"));
     }
-
 
     @Test
     public void testSerineRnaSequence3() {
@@ -67,13 +65,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UCA"));
     }
 
-
     @Test
     public void testSerineRnaSequence4() {
         List<String> expected = Arrays.asList("Serine");
         assertEquals(expected, proteinTranslator.translate("UCG"));
     }
-
 
     @Test
     public void testTyrosineRnaSequence1() {
@@ -81,15 +77,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UAU"));
     }
 
-
     @Test
-
-
     public void testTyrosineRnaSequence2() {
         List<String> expected = Arrays.asList("Tyrosine");
         assertEquals(expected, proteinTranslator.translate("UAC"));
     }
-
 
     @Test
     public void testCysteineRnaSequence1() {
@@ -97,15 +89,10 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UGU"));
     }
 
-
     @Test
-
-
     public void testCysteineRnaSequence2() {
         List<String> expected = Arrays.asList("Cysteine");
         assertEquals(expected, proteinTranslator.translate("UGC"));
-
-
     }
 
     @Test
@@ -126,13 +113,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UAG"));
     }
 
-
     @Test
     public void testStopRnaSequence3() {
         List<String> expected = Arrays.asList();
         assertEquals(expected, proteinTranslator.translate("UGA"));
     }
-
 
     @Test
     public void testTranslationOfRnaToProteinList() {
@@ -140,13 +125,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("AUGUUUUGG"));
     }
 
-
     @Test
     public void testTranslationStopsIfStopCodonAtBeginning() {
         List<String> expected = Arrays.asList();
         assertEquals(expected, proteinTranslator.translate("UAGUGG"));
     }
-
 
     @Test
     public void testTranslationStopsIfStopCodonAtEnd1() {
@@ -154,13 +137,11 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UGGUAG"));
     }
 
-
     @Test
     public void testTranslationStopsIfStopCodonAtEnd2() {
         List<String> expected = Arrays.asList("Methionine", "Phenylalanine");
         assertEquals(expected, proteinTranslator.translate("AUGUUUUAA"));
     }
-
 
     @Test
     public void testTranslationStopsIfStopCodonInMiddle1() {
@@ -168,11 +149,9 @@ class ProteinTranslatorTest {
         assertEquals(expected, proteinTranslator.translate("UGGUAGUGG"));
     }
 
-
     @Test
     public void testTranslationStopsIfStopCodonInMiddle2() {
         List<String> expected = Arrays.asList("Tryptophan", "Cysteine", "Tyrosine");
         assertEquals(expected, proteinTranslator.translate("UGGUGUUAUUAAUGGUUU"));
     }
-
 }

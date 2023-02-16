@@ -25,7 +25,6 @@ class MatrixTest {
         assertArrayEquals(expectedRow, matrix.getRow(rowIndex));
     }
 
-
     @Test
     public void extractRowFromDiffWidthsMatrixTest() {
         String matrixAsString = "1 2\n10 20";

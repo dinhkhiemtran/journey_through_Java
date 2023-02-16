@@ -78,7 +78,6 @@ class AnagramTest {
                 .containsExactlyInAnyOrder("Carthorse");
     }
 
-
     @Test
     public void testCaseInsensitiveWhenSubjectStartsWithUpperCaseLetter() {
         Anagram detector = new Anagram("Orchestra");

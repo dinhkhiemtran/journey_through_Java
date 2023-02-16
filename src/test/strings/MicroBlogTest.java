@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MicroBlogTest {
     private final MicroBlog microBlog = new MicroBlog();
 
-
     @Test
     public void englishLanguageShort() {
         String expected = "Hi";

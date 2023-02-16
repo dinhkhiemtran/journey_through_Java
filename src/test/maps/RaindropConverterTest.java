@@ -104,5 +104,4 @@ class RaindropConverterTest {
     public void soundFor3125IsPlangAsItHasFactor5() {
         assertEquals("Plang", raindropConverter.convert(3125));
     }
-
 }

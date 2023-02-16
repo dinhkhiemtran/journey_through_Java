@@ -29,7 +29,6 @@ class ResistorColorTest {
         assertThat(resistorColor.colorCode("orange")).isEqualTo(3);
     }
 
-
     @Test
     public void testColors() {
         assertThat(resistorColor.colors()).containsExactly(

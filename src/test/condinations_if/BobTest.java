@@ -9,12 +9,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 class BobTest {
     private Bob bob;
 
-
     @BeforeEach
     public void setUp() {
         bob = new Bob();
     }
-
 
     @Test
     public void saySomething() {
@@ -22,13 +20,11 @@ class BobTest {
                 .isEqualTo("Whatever.");
     }
 
-
     @Test
     public void shouting() {
         assertThat(bob.hey("WATCH OUT!"))
                 .isEqualTo("Whoa, chill out!");
     }
-
 
     @Test
     public void shoutingGibberish() {
@@ -36,13 +32,11 @@ class BobTest {
                 .isEqualTo("Whoa, chill out!");
     }
 
-
     @Test
     public void askingAQuestion() {
         assertThat(bob.hey("Does this cryogenic chamber make me look fat?"))
                 .isEqualTo("Sure.");
     }
-
 
     @Test
     public void askingANumericQuestion() {
@@ -50,13 +44,11 @@ class BobTest {
                 .isEqualTo("Sure.");
     }
 
-
     @Test
     public void askingGibberish() {
         assertThat(bob.hey("fffbbcbeab?"))
                 .isEqualTo("Sure.");
     }
-
 
     @Test
     public void talkingForcefully() {
@@ -64,13 +56,11 @@ class BobTest {
                 .isEqualTo("Whatever.");
     }
 
-
     @Test
     public void usingAcronymsInRegularSpeech() {
         assertThat(bob.hey("It's OK if you don't want to go work for NASA."))
                 .isEqualTo("Whatever.");
     }
-
 
     @Test
     public void forcefulQuestions() {
@@ -78,13 +68,11 @@ class BobTest {
                 .isEqualTo("Calm down, I know what I'm doing!");
     }
 
-
     @Test
     public void shoutingNumbers() {
         assertThat(bob.hey("1, 2, 3 GO!"))
                 .isEqualTo("Whoa, chill out!");
     }
-
 
     @Test
     public void onlyNumbers() {
@@ -92,13 +80,11 @@ class BobTest {
                 .isEqualTo("Whatever.");
     }
 
-
     @Test
     public void questionWithOnlyNumbers() {
         assertThat(bob.hey("4?"))
                 .isEqualTo("Sure.");
     }
-
 
     @Test
     public void shoutingWithSpecialCharacters() {
@@ -106,13 +92,11 @@ class BobTest {
                 .isEqualTo("Whoa, chill out!");
     }
 
-
     @Test
     public void shoutingWithNoExclamationMark() {
         assertThat(bob.hey("I HATE THE DENTIST"))
                 .isEqualTo("Whoa, chill out!");
     }
-
 
     @Test
     public void statementContainingQuestionMark() {
@@ -120,13 +104,11 @@ class BobTest {
                 .isEqualTo("Whatever.");
     }
 
-
     @Test
     public void nonLettersWithQuestion() {
         assertThat(bob.hey(":) ?"))
                 .isEqualTo("Sure.");
     }
-
 
     @Test
     public void prattlingOn() {
@@ -134,13 +116,11 @@ class BobTest {
                 .isEqualTo("Sure.");
     }
 
-
     @Test
     public void silence() {
         assertThat(bob.hey(""))
                 .isEqualTo("Fine. Be that way!");
     }
-
 
     @Test
     public void prolongedSilence() {
@@ -148,13 +128,11 @@ class BobTest {
                 .isEqualTo("Fine. Be that way!");
     }
 
-
     @Test
     public void alternateSilence() {
         assertThat(bob.hey("\t\t\t\t\t\t\t\t\t\t"))
                 .isEqualTo("Fine. Be that way!");
     }
-
 
     @Test
     public void multipleLineQuestion() {
@@ -162,13 +140,11 @@ class BobTest {
                 .isEqualTo("Whatever.");
     }
 
-
     @Test
     public void startingWithWhitespace() {
         assertThat(bob.hey("         hmmmmmmm..."))
                 .isEqualTo("Whatever.");
     }
-
 
     @Test
     public void endingWithWhiteSpace() {
@@ -176,18 +152,15 @@ class BobTest {
                 .isEqualTo("Sure.");
     }
 
-
     @Test
     public void otherWhiteSpace() {
         assertThat(bob.hey("\n\r \t"))
                 .isEqualTo("Fine. Be that way!");
     }
 
-
     @Test
     public void nonQuestionEndingWithWhiteSpace() {
         assertThat(bob.hey("This is a statement ending with whitespace      "))
                 .isEqualTo("Whatever.");
     }
-
 }

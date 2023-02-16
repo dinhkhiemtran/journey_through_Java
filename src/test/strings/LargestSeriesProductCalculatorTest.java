@@ -16,7 +16,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersInOrder() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("0123456789");
@@ -24,7 +23,6 @@ class LargestSeriesProductCalculatorTest {
         long actualProduct = calculator.calculateLargestProductForSeriesLength(2);
         assertEquals(expectedProduct, actualProduct);
     }
-
 
     @Test
     public void testCorrectlyCalculatesLargestProductOfLengthTwoWithNumbersNotInOrder() {
@@ -34,7 +32,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersInOrder() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("0123456789");
@@ -42,7 +39,6 @@ class LargestSeriesProductCalculatorTest {
         long actualProduct = calculator.calculateLargestProductForSeriesLength(3);
         assertEquals(expectedProduct, actualProduct);
     }
-
 
     @Test
     public void testCorrectlyCalculatesLargestProductOfLengthThreeWithNumbersNotInOrder() {
@@ -52,7 +48,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testCorrectlyCalculatesLargestProductOfLengthFiveWithNumbersInOrder() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("0123456789");
@@ -60,7 +55,6 @@ class LargestSeriesProductCalculatorTest {
         long actualProduct = calculator.calculateLargestProductForSeriesLength(5);
         assertEquals(expectedProduct, actualProduct);
     }
-
 
     @Test
     public void testCorrectlyCalculatesLargestProductInLongStringToSearchV1() {
@@ -71,7 +65,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testCorrectlyCalculatesLargestProductOfZeroIfAllDigitsAreZeroes() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("0000");
@@ -79,7 +72,6 @@ class LargestSeriesProductCalculatorTest {
         long actualProduct = calculator.calculateLargestProductForSeriesLength(2);
         assertEquals(expectedProduct, actualProduct);
     }
-
 
     @Test
     public void testCorrectlyCalculatesLargestProductOfZeroIfAllSeriesOfGivenLengthContainZero() {
@@ -89,7 +81,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testSeriesLengthLongerThanLengthOfStringToTestIsRejected() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("123");
@@ -97,7 +88,6 @@ class LargestSeriesProductCalculatorTest {
                 .isThrownBy(() -> calculator.calculateLargestProductForSeriesLength(4))
                 .withMessage("Series length must be less than or equal to the length of the string to search.");
     }
-
 
     @Test
     public void testCorrectlyCalculatesLargestProductOfLength0ForEmptyStringToSearch() {
@@ -107,7 +97,6 @@ class LargestSeriesProductCalculatorTest {
         assertEquals(expectedProduct, actualProduct);
     }
 
-
     @Test
     public void testCorrectlyCalculatesLargestProductOfLength0ForNonEmptyStringToSearch() {
         LargestSeriesProductCalculator calculator = new LargestSeriesProductCalculator("123");
@@ -115,7 +104,6 @@ class LargestSeriesProductCalculatorTest {
         long actualProduct = calculator.calculateLargestProductForSeriesLength(0);
         assertEquals(expectedProduct, actualProduct);
     }
-
 
     @Test
     public void testEmptyStringToSearchAndSeriesOfNonZeroLengthIsRejected() {
@@ -125,14 +113,12 @@ class LargestSeriesProductCalculatorTest {
                 .withMessage("Series length must be less than or equal to the length of the string to search.");
     }
 
-
     @Test
     public void testStringToSearchContainingNonDigitCharacterIsRejected() {
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> new LargestSeriesProductCalculator("1234a5"))
                 .withMessage("String to search may only contain digits.");
     }
-
 
     @Test
     public void testNegativeSeriesLengthIsRejected() {

@@ -87,5 +87,4 @@ class ElonsToyCarTest {
         ElonsToyCar car = new ElonsToyCar();
         assertThat(car.batteryDisplay()).isEqualTo("Battery at 100%");
     }
-
 }

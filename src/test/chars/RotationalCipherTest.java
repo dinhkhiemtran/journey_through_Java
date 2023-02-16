@@ -42,7 +42,7 @@ class RotationalCipherTest {
     @Test
     public void rotateCapitalLetters() {
         rotationalCipher = new RotationalCipher(5);
-       assertEquals("TRL", rotationalCipher.rotate("OMG"));
+        assertEquals("TRL", rotationalCipher.rotate("OMG"));
     }
 
     @Test

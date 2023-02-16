@@ -19,7 +19,6 @@ class SeriesTest {
         assertEquals(expected, actual);
     }
 
-
     @Test
     public void slicesOfOneFromTwo() {
         Series series = new Series("12");
@@ -27,7 +26,6 @@ class SeriesTest {
         List<String> actual = series.slices(1);
         assertEquals(expected, actual);
     }
-
 
     @Test
     public void slicesOfTwo() {
@@ -37,7 +35,6 @@ class SeriesTest {
         assertEquals(expected, actual);
     }
 
-
     @Test
     public void slicesOfTwoOverlap() {
         Series series = new Series("9142");
@@ -45,7 +42,6 @@ class SeriesTest {
         List<String> actual = series.slices(2);
         assertEquals(expected, actual);
     }
-
 
     @Test
     public void slicesIncludeDuplicates() {
@@ -59,7 +55,6 @@ class SeriesTest {
         List<String> actual = series.slices(3);
         assertEquals(expected, actual);
     }
-
 
     @Test
     public void slicesOfLongSeries() {
@@ -78,7 +73,6 @@ class SeriesTest {
         assertEquals(expected, actual);
     }
 
-
     @Test
     public void sliceLengthIsToolarge() {
         Series series = new Series("12345");
@@ -86,7 +80,6 @@ class SeriesTest {
                 .isThrownBy(() -> series.slices(6))
                 .withMessage("Slice size is too big.");
     }
-
 
     @Test
     public void sliceLengthZero() {
@@ -96,7 +89,6 @@ class SeriesTest {
                 .withMessage("Slice size is too small.");
     }
 
-
     @Test
     public void sliceLengthNegative() {
         Series series = new Series("123");
@@ -104,7 +96,6 @@ class SeriesTest {
                 .isThrownBy(() -> series.slices(-1))
                 .withMessage("Slice size is too small.");
     }
-
 
     @Test
     public void emptySeries() {
