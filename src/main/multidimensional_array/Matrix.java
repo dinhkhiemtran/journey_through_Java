@@ -1,4 +1,4 @@
-package main.arrays;
+package main.multidimensional_array;
 
 import java.util.Arrays;
 

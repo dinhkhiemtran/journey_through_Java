@@ -1,6 +1,6 @@
-package test.arrays;
+package test.multidimensional_array;
 
-import main.arrays.Matrix;
+import main.multidimensional_array.Matrix;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
