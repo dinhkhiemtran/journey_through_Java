@@ -1,4 +1,4 @@
-package main.chars;
+package main.encode_decode;
 
 public class Atbash {
 

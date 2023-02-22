@@ -1,6 +1,6 @@
-package test;
+package test.encode_decode;
 
-import main.chars.Atbash;
+import main.encode_decode.Atbash;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
