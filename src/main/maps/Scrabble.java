@@ -19,7 +19,6 @@ public class Scrabble {
     }
 
     public Scrabble(String word) {
-
         this.word = word.trim().toUpperCase().replace(" ", "");
     }
 
