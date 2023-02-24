@@ -1,6 +1,6 @@
-package test.generics;
+package test.structure;
 
-import main.generics.DoublyLinkedList;
+import main.structure.DoublyLinkedList;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

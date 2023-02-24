@@ -1,4 +1,4 @@
-package main.generics;
+package main.structure;
 
 import java.util.LinkedList;
 import java.util.List;
