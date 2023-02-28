@@ -1,4 +1,4 @@
-package test;
+package test.maps;
 
 import main.maps.space_age.SpaceAge;
 import org.junit.jupiter.api.Test;
